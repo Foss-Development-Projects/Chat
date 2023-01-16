@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Finlandica&family=Montserrat:wght@500&family=Open+Sans:wght@300;400&family=Roboto:wght@300&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+            integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="./scss/main.scss" />
+        <title>Chat Interface</title>
+    </head>
+    <body>
+        <div class="chat-container">
+            <div class="chat-bar">Chat Section Bar</div>
+            <ul class="chat-section-container" id="chat-section-container">
+                <li class="chat-msg-move-right">
+                    <div class="your-message">
+                        <div class="right-triangle"></div>
+                        <p class="msg-text">
+                            Message-1 ThigeMessage-1 This Is A MessageMessage-1
+                            This Is A Message
+                        </p>
+                    </div>
+                </li>
+                <li class="chat-msg-move-left">
+                    <div class="their-message">
+                        <div class="left-triangle"></div>
+                        <p class="msg-text">
+                            Message-1 This Is MessageMessage-1 This Is A Message
+                        </p>
+                    </div>
+                </li>
+                <li class="chat-msg-move-right">
+                    <div class="your-message">
+                        <div class="right-triangle"></div>
+                        <p class="msg-text">
+                            Message-1 This Is A MessageMesssage-1 This Is A
+                            Message
+                        </p>
+                    </div>
+                </li>
+                <li class="chat-msg-move-left">
+                    <div class="their-message">
+                        <div class="left-triangle"></div>
+                        <p class="msg-text">MessMessage-1 This Is A Message</p>
+                    </div>
+                </li>
+                <li class="chat-msg-move-right">
+                    <div class="your-message">
+                        <div class="right-triangle"></div>
+                        <p class="msg-text">
+                            Message-1 This Is A MessageMessage-1 This Is A
+                        </p>
+                    </div>
+                </li>
+                <li class="chat-msg-move-left">
+                    <div class="their-message">
+                        <div class="left-triangle"></div>
+                        <p class="msg-text">
+                            Message-1 This Is A MessageMessage-1 This Is A
+                            MessageMessage-1 This Is A Message
+                        </p>
+                    </div>
+                </li>
+                <li class="chat-msg-move-right">
+                    <div class="your-message">
+                        <div class="right-triangle"></div>
+                        <p class="msg-text">
+                            MessageMessage-1 This Is A MessageMessage-1 This Is
+                            A Message
+                        </p>
+                    </div>
+                </li>
+                <li class="chat-msg-move-left">
+                    <div class="their-message">
+                        <div class="left-triangle"></div>
+                        <p class="msg-text">
+                            Message-1 This Is A MessageMessage-1 This Is A
+                            MessageMessae
+                        </p>
+                    </div>
+                </li>
+                <li class="chat-msg-move-left">
+                    <div class="their-message">
+                        <div class="left-triangle"></div>
+                        <p class="msg-text">
+                            Message-1 This Is A MessageMessage-1 This Is A
+                            MessageMessae
+                        </p>
+                    </div>
+                </li>
+                <li class="chat-msg-move-left">
+                    <div class="their-message">
+                        <div class="left-triangle"></div>
+                        <p class="msg-text">
+                            Message-1 This Is A MessageMessage-1 This Is A
+                            MessageMessae
+                        </p>
+                    </div>
+                </li>
+            </ul>
+            <form action="" method="POST" class="input-container">
+                <label for="chat-msg-file" class="chat-msg-file-label"
+                    ><i class="fa-solid fa-paperclip"></i
+                ></label>
+                <input
+                    type="file"
+                    id="chat-msg-file"
+                    name="chat-msg-file"
+                    value="chat-msg-file"
+                />
+                <div
+                    name="chat-text-msg-input"
+                    id="chat-text-msg-input"
+                    class="chat-text-msg-input"
+                    placeholder="Type A Message ..."
+                    contentEditable=true
+                ></div>
+            </form>
+        </div>
+        <script src="./js/main.js"></script>
+    </body>
+</html>
