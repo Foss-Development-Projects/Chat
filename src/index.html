@@ -16,13 +16,48 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+        />
         <link rel="stylesheet" href="./scss/main.scss" />
         <title>Chat Interface</title>
     </head>
     <body>
         <div class="chat-container">
-            <div class="chat-bar">Chat Section Bar</div>
+            <div class="chat-bar">
+                <span>
+                    <a href="/chat"
+                        ><i class="bi bi-caret-left-fill" id="chat-nav-back"></i
+                    ></a>
+                </span>
+                <div class="chat-bar-friend-section">
+                    <img
+                        class="chat-bar-friend-pic"
+                        src="https://images.hdqwalls.com/download/skull-logo-uz-800x1280.jpg"
+                        alt="Other End User Profile Picture"
+                    />
+                    <div class="chat-friend-info">
+                        <p class="name">Name Surname</p>
+                        <p class="status">
+                            <i class="fa-solid fa-circle active-status-dot"></i>
+                            Active 1m Ago
+                        </p>
+                    </div>
+                </div>
+                <span>
+                    <i class="bi bi-three-dots-vertical" id="chat-nav-menu"></i>
+                </span>
+            </div>
             <ul class="chat-section-container" id="chat-section-container">
+                <li class="friend-user-intro">
+                    <img
+                        class="friend-user-profile-image"
+                        src="https://cdn.pixabay.com/photo/2018/08/14/13/23/ocean-3605547__480.jpg"
+                        alt="Friend User Profile"
+                    />
+                    <header class="friend-user-name">Name Surname</header>
+                </li>
                 <li class="chat-msg-move-right">
                     <div class="your-message">
                         <div class="right-triangle"></div>
@@ -62,6 +97,9 @@
                             Message-1 This Is A MessageMessage-1 This Is A
                         </p>
                     </div>
+                </li>
+                <li class="app-message">
+                    <p class="app-message-text">SomeContent</p>
                 </li>
                 <li class="chat-msg-move-left">
                     <div class="their-message">
@@ -110,22 +148,36 @@
                 </li>
             </ul>
             <form action="" method="POST" class="input-container">
-                <label for="chat-msg-file" class="chat-msg-file-label"
+                <label for="chat-msg-file" class="chat-msg-icon-label"
                     ><i class="fa-solid fa-paperclip"></i
                 ></label>
                 <input
                     type="file"
                     id="chat-msg-file"
                     name="chat-msg-file"
-                    value="chat-msg-file"
+                    class="chat-msg"
                 />
-                <div
-                    name="chat-text-msg-input"
-                    id="chat-text-msg-input"
-                    class="chat-text-msg-input"
-                    placeholder="Type A Message ..."
-                    contentEditable=true
-                ></div>
+                <!-- Text Input Element -->
+                <div class="msg-input-container">
+                    <div
+                        name="chat-text-msg-input"
+                        id="chat-text-msg-input"
+                        class="chat-text-msg-input"
+                        placeholder="Type A Message ..."
+                        contenteditable="true"
+                    ></div>
+                    <div class="chat-text-msg-input-placeholder">Content</div>
+                </div>
+                <!-- Emoji Icon Element -->
+                <label for="chat-msg-emoji" class="chat-msg-icon-label"
+                    ><i class="fa-solid fa-face-smile"></i>
+                </label>
+                <input
+                    type="file"
+                    id="chat-msg-emoji"
+                    name="chat-msg-emoji"
+                    class="chat-msg"
+                />
             </form>
         </div>
         <script src="./js/main.js"></script>

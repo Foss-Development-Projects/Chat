@@ -1,4 +1,4 @@
-// const msgBox = document.getElementById("chat-text-msg-input")
+const msgInputBox = document.getElementById("chat-text-msg-input")
 // const chatBox = document.getElementById("chat-section-container")
 
 // msgBox.addEventListener('input', () => {
@@ -11,3 +11,9 @@
 // 	}
 	
 // })
+
+let msgBox = window.getComputedStyle(document.getElementById('chat-text-msg-input'), ':after');
+
+if(msgBox.length > 0){
+	msgBox = "";
+}

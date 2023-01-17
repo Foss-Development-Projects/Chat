@@ -1,9 +1,14 @@
+@use 'modules/_chat-bar';
+@use 'modules/_chat-section';
+@use 'modules/_chat-friend';
+@use 'modules/_chat-msg';
+@use 'modules/_chat-input';
 :root {
     --chat-ui-bg-color: purple;
     --chat-ui-bg-color: rgba(255, 255, 255, 0.9);
     --chat-scrollbar-bg-color: transparent;
     --chat-scrollbar-thumb-bg-color: whitesmoke;
-    --your-msg-bg-color: orange;
+    --your-msg-bg-color: green;
     --their-msg-bg-color: teal;
     --msg-text-color: white;
     --app-msg-color: green;
@@ -33,162 +38,13 @@ body {
     background-size: cover;
     align-items: center;
 }
-.chat-bar {
-    height: 30px;
-    background-color: lightsteelblue;
-    width: 100%;
-    text-align: center;
-    font-size: 1.5em;
-    font-family: "Verdana", monospace;
-    margin-bottom: 10px;
-    position: fixed;
-    top: 0;
-}
-.chat-section-container {
-    padding-top: 10px;
-    width: 100%;
-    padding-right: 0;
-    padding-bottom: 45px;
-    padding-left: 0;
-    margin-top: 30px;
-    overflow-y: scroll;
-    height: 100%;
-    &::-webkit-scrollbar {
-        height: 100%;
-        width: 8px;
-        border-radius: 10px;
-        background: var(--chat-scrollbar-bg-color);
-    }
-    &::-webkit-scrollbar-thumb {
-        background: var(--chat-scrollbar-thumb-bg-color);
-        border-radius: 10px;
-    }
-    &:-webkit-scrollbar-button {
-        display: none;
-    }
-    .chat-msg-move-left {
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-    }
-    .chat-msg-move-right {
-        display: flex;
-        justify-content: flex-end;
-        align-items: flex-end;
-    }
-    color: var(--msg-text-color);
-    li {
-        display: flex;
-        align-items: center;
-        margin: 1.5px 0;
-        font-family: "Finlandica", sans-serif;
-        div {
-            max-width: 50%;
-            display: flex;
-            align-items: flex-start;
-        }
-        p {
-            padding: 5px;
-            font-size: 0.9em;
-            font-weight: 500;
-        }
-        .your-message {
-            flex-direction: row-reverse;
-            .right-triangle {
-                width: 0;
-                height: 0;
-                border-top: 0px solid transparent;
-                border-left: 25px solid var(--your-msg-bg-color);
-                border-bottom: 15px solid transparent;
-            }
-            .msg-text {
-                background: var(--your-msg-bg-color);
-                border-radius: 10px 0 10px 10px;
-            }
-        }
-        .their-message {
-            .left-triangle {
-                width: 0;
-                height: 0;
-                border-top: 0px solid transparent;
-                border-right: 25px solid var(--their-msg-bg-color);
-                border-bottom: 15px solid transparent;
-            }
-            .msg-text {
-                background: var(--their-msg-bg-color);
-                border-radius: 0 10px 10px 10px;
-            }
-        }
-    }
-}
-.input-container {
-    width: 95%;
-    display: flex;
-    align-items: flex-end;
-    bottom: 5px;
-    border-radius: 20px;
-    background-color: var(--msg-textbox-bg-color);
-    margin: 0 10px;
-    .chat-text-msg-input {
-        resize: none;
-        padding: 2.5px 10px;
-        border-radius: 0 10px 10px 0;
-        border: none;
-        border-left: 2.5px solid var(--msg-text-color);
-        text-align: left;
-        width: 90%;
-        height: 100%;
-        font-size: 1em;
-        background-color: transparent;
-        font-family: "Open Sans", sans-serif;
-        outline: none;
-        color: var(--msg-text-color);
-        &::placeholder {
-            color: var(--msg-text-color);
-        }
 
-        &::-webkit-scrollbar {
-            width: 8px;
-            border-radius: 0 20px 20px 0;
-            height: 100%;
-        }
-    }
-    #chat-msg-file {
-        display: none;
-    }
-    .chat-msg-file-label {
-        width: 38px;
-        border-radius: 50%;
-        height: 35px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        margin: 5px;
-        &:hover {
-            background-color: var(--chat-accent-color);
-        }
-        i {
-            font-size: 1.3em;
-            color: white;
-            height: 16px;
-            width: 16px;
-            position: relative;
-            &:before {
-                position: absolute !important;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-            }
-        }
-    }
-}
 @media only screen and (max-width: 400px) {
     .chat-section-container {
         li {
             margin: 5px 0;
             div {
-                max-width: 90%;
+                max-width: 80%;
             }
         }
     }

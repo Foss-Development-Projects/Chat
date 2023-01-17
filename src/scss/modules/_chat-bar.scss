@@ -1,0 +1,45 @@
+.chat-bar {
+    background-color: var(--chat-navbar-color);
+    display: flex;
+    align-items: center;
+    background-color: lightsteelblue;
+    width: 100%;
+    text-align: center;
+    font-size: 1em;
+    font-family: "Verdana", monospace;
+    margin-bottom: 10px;
+    position: fixed;
+    top: 0;
+    justify-content: space-between;
+    span {
+        i {
+            color: whitesmoke;
+            font-size: 1.6em;
+            border-radius: 5px;
+            cursor: pointer;
+            &:hover {
+                background-color: var(--msg-textbox-bg-color);
+            }
+        }
+    }
+    #chat-nav-back {
+        margin: 0 0 0 10px;
+    }
+    #chat-nav-menu {
+        margin: 0 10px 0 0;
+    }
+}
+.chat-bar-friend-section {
+    display: grid;
+    grid-template-areas: "profile info";
+    img {
+        grid-area: profile;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    .chat-friend-info {
+        grid-area: info;
+    }
+}
