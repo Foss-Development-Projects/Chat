@@ -2,7 +2,7 @@
     background-color: var(--chat-navbar-color);
     display: flex;
     align-items: center;
-    background-color: lightsteelblue;
+    backdrop-filter:blur(5px);
     width: 100%;
     text-align: center;
     font-size: 1em;
