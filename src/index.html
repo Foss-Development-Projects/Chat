@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/png" href="./assets/images/chat.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -32,17 +33,18 @@
                     ></a>
                 </span>
                 <div class="chat-bar-friend-section">
-                    <img
-                        class="chat-bar-friend-pic"
-                        src="https://images.hdqwalls.com/download/skull-logo-uz-800x1280.jpg"
-                        alt="Other End User Profile Picture"
-                    />
+                    <div class="chat-bar-friend-image-section">
+                        <img
+                            class="chat-bar-friend-pic"
+                            src="https://images.hdqwalls.com/download/skull-logo-uz-800x1280.jpg"
+                            alt="Other End User Profile Picture"
+                        />
+                        <i class="fa-solid fa-circle active-status-dot"></i>
+                    </div>
+
                     <div class="chat-friend-info">
                         <p class="name">Name Surname</p>
-                        <p class="status">
-                            <i class="fa-solid fa-circle active-status-dot"></i>
-                            Active 1m Ago
-                        </p>
+                        <p class="status">Active 1m Ago</p>
                     </div>
                 </div>
                 <span>
@@ -57,6 +59,9 @@
                         alt="Friend User Profile"
                     />
                     <header class="friend-user-name">Name Surname</header>
+                    <p class="friend-user-">
+                        U Are All Setup To Chat Like Fluid
+                    </p>
                 </li>
                 <li class="chat-msg-move-right">
                     <div class="your-message">
@@ -169,15 +174,26 @@
                     <div class="chat-text-msg-input-placeholder">Content</div>
                 </div>
                 <!-- Emoji Icon Element -->
-                <label for="chat-msg-emoji" class="chat-msg-icon-label"
-                    ><i class="fa-solid fa-face-smile"></i>
-                </label>
-                <input
-                    type="file"
-                    id="chat-msg-emoji"
-                    name="chat-msg-emoji"
-                    class="chat-msg"
-                />
+                <div class="msg-input-left-icons">
+                    <label for="chat-msg-emoji" class="chat-msg-icon-label"
+                        ><i class="fa-solid fa-face-smile"></i>
+                    </label>
+                    <input
+                        type="file"
+                        id="chat-msg-emoji"
+                        name="chat-msg-emoji"
+                        class="chat-msg"
+                    />
+                    <label for="chat-msg-emoji" class="chat-msg-icon-label"
+                        ><i class="fa-solid fa-microphone"></i>
+                    </label>
+                    <input
+                        type="audio"
+                        id="chat-msg-audio"
+                        name="chat-msg-audio"
+                        class="chat-msg"
+                    />
+                </div>
             </form>
         </div>
         <script src="./js/main.js"></script>

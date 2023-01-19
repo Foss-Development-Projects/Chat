@@ -14,7 +14,7 @@
     span {
         i {
             color: whitesmoke;
-            font-size: 1.6em;
+            font-size: 1.5em;
             border-radius: 5px;
             cursor: pointer;
             &:hover {
@@ -32,14 +32,43 @@
 .chat-bar-friend-section {
     display: grid;
     grid-template-areas: "profile info";
-    img {
-        grid-area: profile;
-        width: 50px;
+    align-items: center;
+    padding: 5px 0;
+    .chat-bar-friend-image-section {
         height: 50px;
-        border-radius: 50%;
-        object-fit: cover;
+        width: 50px;
+        position: relative;
+        img {
+            grid-area: profile;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        i {
+            position: absolute;
+            right: 0;
+            bottom: 2.5px;
+            font-size: 0.75em;
+            color: var(--status-dot-color);
+        }
     }
+
     .chat-friend-info {
         grid-area: info;
+        display: grid;
+        grid-template-areas: "name" "status";
+        text-align: left;
+        margin-left: 5px;
+        color: white;
+        .name {
+            font-weight: bolder;
+            font-family: "Roboto", sans-serif;
+        }
+        .status {
+            font-weight: bold;
+            font-size: 0.9em;
+            font-family: "Open Sans", sans-serif;
+        }
     }
 }

@@ -1,7 +1,7 @@
 .input-container {
     width: 98%;
     display: grid;
-    grid-template-columns: 35px 4fr 45px;
+    grid-template-columns: 35px auto 85px;
     align-items: flex-end;
     bottom: 5px;
     border-radius: 20px;
@@ -17,6 +17,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
     height: 100%;
     position: relative;
 }
@@ -72,5 +73,15 @@
             left: 50%;
             transform: translate(-50%, -50%);
         }
+    }
+}
+.msg-input-left-icons {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    label {
+        margin: 0 1.5px;
+
     }
 }
