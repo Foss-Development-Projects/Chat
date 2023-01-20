@@ -9,7 +9,7 @@
         align-items: flex-start;
     }
     p {
-        padding: 5px;
+        padding: 10px;
         font-size: 0.9em;
         font-weight: 500;
     }
@@ -26,7 +26,11 @@
     }
     .msg-text {
         background: var(--your-msg-bg-color);
-        border-radius: 10px 0 10px 10px;
+        --msg-text-left-border-radius: 30px;
+        border-radius:  
+        var(--msg-text-left-border-radius) 0 
+        var(--msg-text-left-border-radius) 
+        var(--msg-text-left-border-radius);
     }
 }
 .chat-section-container li .their-message {
@@ -40,6 +44,11 @@
     .msg-text {
         background: var(--their-msg-bg-color);
         border-radius: 0 10px 10px 10px;
+        --msg-text-right-border-radius: 30px;
+        border-radius:  0
+        var(--msg-text-right-border-radius) 
+        var(--msg-text-right-border-radius) 
+        var(--msg-text-right-border-radius);
     }
 }
 .app-message {

@@ -153,15 +153,18 @@
                 </li>
             </ul>
             <form action="" method="POST" class="input-container">
-                <label for="chat-msg-file" class="chat-msg-icon-label"
-                    ><i class="fa-solid fa-paperclip"></i
-                ></label>
-                <input
-                    type="file"
-                    id="chat-msg-file"
-                    name="chat-msg-file"
-                    class="chat-msg"
-                />
+                <div class="msg-input-left-icons">
+                    <label for="chat-msg-file" class="chat-msg-icon-label"
+                        ><i class="fa-solid fa-paperclip"></i
+                    ></label>
+                    <input
+                        type="file"
+                        id="chat-msg-file"
+                        name="chat-msg-file"
+                        class="chat-msg"
+                    />
+                </div>
+
                 <!-- Text Input Element -->
                 <div class="msg-input-container">
                     <div
@@ -171,10 +174,15 @@
                         placeholder="Type A Message ..."
                         contenteditable="true"
                     ></div>
-                    <div class="chat-text-msg-input-placeholder">Content</div>
+                    <div
+                        class="chat-text-msg-input-placeholder"
+                        id="msg-input-placeholder"
+                    >
+                        Type A Message...
+                    </div>
                 </div>
                 <!-- Emoji Icon Element -->
-                <div class="msg-input-left-icons">
+                <div class="msg-input-right-icons">
                     <label for="chat-msg-emoji" class="chat-msg-icon-label"
                         ><i class="fa-solid fa-face-smile"></i>
                     </label>
