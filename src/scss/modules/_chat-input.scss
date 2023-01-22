@@ -3,7 +3,7 @@
     display: grid;
     grid-template-areas: "msg-input-left-icons msg-input msg-input-right-icons";
     grid-template-columns: 45px 1fr 85px;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-between;
     bottom: 5px;
     border-radius: 30px;
@@ -86,7 +86,6 @@
 }
 .msg-input-right-icons {
     grid-area: msg-input-right-icons;
-    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
