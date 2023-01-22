@@ -8,6 +8,7 @@ if (msgInputBox.textContent.length > 0) {
 else {
 	msgInputPlaceholder.textContent = "Type A Message..."
 }
+msgInputBox.width = window.innerWidth - 150 + "px";
 msgInputBox.addEventListener('input', () => {
 	if (msgInputBox.textContent.length > 0) {
 		msgInputPlaceholder.textContent = "";
@@ -21,6 +22,7 @@ msgInputBox.addEventListener('input', () => {
 	else {
 		msgInputBox.style.height = "30px";
 		msgInputBox.style.height = (msgInputBox.scrollHeight) + "px";
+		console.log("Working")
 	}
 	
 })
