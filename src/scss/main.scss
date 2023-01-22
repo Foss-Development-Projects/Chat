@@ -46,8 +46,15 @@ body {
         li {
             margin: 5px 0;
             div {
+
                 max-width: 75%;
             }
         }
+    } 
+}
+
+@media (orientation: landscape){
+    .chat-text-msg-input {
+        max-height: 100px!important;
     }
 }
