@@ -52,6 +52,11 @@ body {
         }
     } 
 }
+@media only screen and (max-width: 280px){
+    .chat-text-msg-input-placeholder {
+        font-size: 14px;
+    }
+}
 
 @media (orientation: landscape){
     .chat-text-msg-input {
