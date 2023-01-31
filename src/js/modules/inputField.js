@@ -1,6 +1,6 @@
-var msgInputBox = document.getElementById("chat-text-msg-input")
-var chatBox = document.getElementById("chat-section-container")
-var msgInputPlaceholder = document.getElementById("msg-input-placeholder")
+const msgInputBox = document.getElementById("chat-text-msg-input")
+const chatBox = document.getElementById("chat-section-container")
+const msgInputPlaceholder = document.getElementById("msg-input-placeholder")
 
 const InputField = () => {
 	if (msgInputBox.textContent.length > 0) {
@@ -17,6 +17,7 @@ const InputField = () => {
 			msgInputPlaceholder.textContent = "Type A Message..."
 		}
 	})
+
 }
 
 export default InputField;
