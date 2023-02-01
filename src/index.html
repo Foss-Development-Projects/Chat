@@ -7,7 +7,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Finlandica&family=Montserrat:wght@500&family=Open+Sans:wght@300;400&family=Roboto:wght@300&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Finlandica&family=Montserrat:wght@500&family=Open+Sans:wght@300;400&family=Roboto:wght@300&display=swap;family=Noto+Sans&display=swap"
             rel="stylesheet"
         />
         <link
@@ -49,9 +49,17 @@
                         <p class="status">Active 1m Ago</p>
                     </div>
                 </div>
-                <span>
-                    <i class="bi bi-three-dots-vertical" id="chat-nav-menu"></i>
-                </span>
+                <div class="chat-menu-section">
+                    <span id="toggle-nav-menu-button">
+                        <i class="bi bi-three-dots-vertical" id="chat-nav-menu"></i>
+                    </span>
+                    <aside class="chat-menu-dropdown" id="nav-menu">
+                        <button>Settings</button>
+                        <button>Profile</button>
+                        <button>Media</button>
+                    </aside>
+                </div>
+                
             </div>
             <ul class="chat-section-container" id="chat-section-container">
                 <li class="friend-user-intro">
@@ -182,7 +190,7 @@
                     >
                         Type A Message...
                     </div>
-                    <!-- <textarea class="msg-textarea" id="msg-textarea"></textarea> -->
+                    <textarea class="msg-textarea" id="msg-textarea"></textarea>
                 </div>
                 <!-- Emoji Icon Element -->
                 <div class="msg-input-right-icons">
@@ -203,7 +211,6 @@
                 </aside> 
             </form>
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/emoji-mart@latest/dist/browser.js"></script>
         <script defer type="module" src="./assets/js/main.js"></script>
     </body>
 </html>

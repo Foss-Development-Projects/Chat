@@ -1,8 +1,10 @@
 @use 'modules/_chat-bar';
+@use 'modules/_chat-menu';
 @use 'modules/_chat-section';
 @use 'modules/_chat-friend';
 @use 'modules/_chat-msg';
 @use 'modules/_chat-input';
+
 :root {
     --chat-ui-bg-color: purple;
     --chat-ui-bg-color: rgba(255, 255, 255, 0.9);
@@ -34,7 +36,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-image: url("https://cutewallpaper.org/cdn-cgi/mirage/dd19f2d06ebc24f541f142b37b4289ffa7de722a7607e39984c5c6dd4ce8defd/1280/21/facet-wallpapers/Facet-Wallpaper-Justin-Maller-Facet-Wallpapers-95-Images-.jpg");
+    background-image: url("./../images/background.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;

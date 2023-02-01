@@ -1,8 +1,12 @@
 lockfileVersion: 5.4
 
 specifiers:
+  emoji-mart: ^5.5.2
   sass: ^1.57.1
   vite: ^4.0.4
+
+dependencies:
+  emoji-mart: registry.npmjs.org/emoji-mart/5.5.2
 
 devDependencies:
   sass: registry.npmjs.org/sass/1.57.1
@@ -294,6 +298,12 @@ packages:
     optionalDependencies:
       fsevents: registry.npmjs.org/fsevents/2.3.2
     dev: true
+
+  registry.npmjs.org/emoji-mart/5.5.2:
+    resolution: {integrity: sha512-Sqc/nso4cjxhOwWJsp9xkVm8OF5c+mJLZJFoFfzRuKO+yWiN7K8c96xmtughYb0d/fZ8UC6cLIQ/p4BR6Pv3/A==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/emoji-mart/-/emoji-mart-5.5.2.tgz}
+    name: emoji-mart
+    version: 5.5.2
+    dev: false
 
   registry.npmjs.org/esbuild/0.16.17:
     resolution: {integrity: sha512-G8LEkV0XzDMNwXKgM0Jwu3nY3lSTwSGY6XbxM9cr9+s0T/qSV1q1JVPBGzm3dcjhCic9+emZDmMffkwgPeOeLg==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/esbuild/-/esbuild-0.16.17.tgz}
