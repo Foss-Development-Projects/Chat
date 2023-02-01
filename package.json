@@ -16,8 +16,5 @@
   "devDependencies": {
     "sass": "^1.57.1",
     "vite": "^4.0.4"
-  },
-  "dependencies": {
-    "emoji-api": "^3.0.1"
   }
 }

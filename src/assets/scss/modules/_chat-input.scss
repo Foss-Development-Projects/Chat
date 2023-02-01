@@ -60,7 +60,8 @@
     position: absolute;
     top: 11px;
     font-size: 16px;
-    left: 5px;
+    left: 4px;
+    transition: opacity, 100ms ease-out;
     font-family: "Open Sans", sans-serif;
 }
 
@@ -116,23 +117,22 @@
 }
 .emoji-menu {
     position: absolute;
+    height: auto;
+    width: 360px;
     bottom: 50px;
-    border-radius: 10px;
-    right: 10px;
-    background-color: var(--emoji-menu-bg-color);
-    width:250px;
-    height: 150px;
-    display: grid;
-    padding: 5px;
-    overflow-y: scroll;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(auto-fill, 30px);
-    span {
-        font-size: 1.2em;
-        width: 30px;
-        height: 30px;
-    }
+    right: 0px;
+    padding: 7.5px;
+    transform: scale(0);
+    transform-origin: bottom right;
+    transition: transform, 200ms ease;
     &::-webkit-scrollbar {
         display: none;
     }
+}
+em-emoji-picker {
+    height: 300px!important;
+}
+.show-emoji-menu {
+    transform: scale(1.0);
+    transition: transform, 200ms ease;
 }

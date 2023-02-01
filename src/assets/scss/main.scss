@@ -41,7 +41,11 @@ body {
     background-size: cover;
     align-items: center;
 }
-
+@media only screen and (max-width: 600px) {
+    .chat-text-msg-input {
+        max-height: 100px!important;
+    }
+}
 @media only screen and (max-width: 400px) {
     .chat-section-container {
         li {

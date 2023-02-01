@@ -1,12 +1,8 @@
 lockfileVersion: 5.4
 
 specifiers:
-  emoji-api: ^3.0.1
   sass: ^1.57.1
   vite: ^4.0.4
-
-dependencies:
-  emoji-api: registry.npmjs.org/emoji-api/3.0.1
 
 devDependencies:
   sass: registry.npmjs.org/sass/1.57.1
@@ -298,12 +294,6 @@ packages:
     optionalDependencies:
       fsevents: registry.npmjs.org/fsevents/2.3.2
     dev: true
-
-  registry.npmjs.org/emoji-api/3.0.1:
-    resolution: {integrity: sha512-N+NbQpIL/HG80+J8o+48jEuO/JyEO0E1zHX9WxCEDoX8p+Wl4myt+Cp+9khC4+RljM5O2i4gRjHefO19LrotEw==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/emoji-api/-/emoji-api-3.0.1.tgz}
-    name: emoji-api
-    version: 3.0.1
-    dev: false
 
   registry.npmjs.org/esbuild/0.16.17:
     resolution: {integrity: sha512-G8LEkV0XzDMNwXKgM0Jwu3nY3lSTwSGY6XbxM9cr9+s0T/qSV1q1JVPBGzm3dcjhCic9+emZDmMffkwgPeOeLg==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/esbuild/-/esbuild-0.16.17.tgz}

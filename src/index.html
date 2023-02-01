@@ -17,12 +17,13 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
         <link
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
         />
-        <link rel="stylesheet" href="./scss/main.scss" />
-        <script defer type="module" src="./js/main.js"></script>
+        <link rel="stylesheet" href="./assets/scss/main.scss" />
         <title>Chat Interface</title>
     </head>
     <body>
@@ -153,7 +154,7 @@
                     </div>
                 </li>
             </ul>
-            <form action="" method="POST" class="input-container" id="input-container"> 
+            <form action="" method="POST" class="input-container" id="input-container">
                 <div class="msg-input-left-icons">
                     <label for="chat-msg-file" class="chat-msg-icon-label"
                         ><i class="fa-solid fa-paperclip"></i
@@ -174,8 +175,7 @@
                         class="chat-text-msg-input"
                         placeholder="Type A Message ..."
                         contenteditable="true"
-                    >
-                    </div>
+                    ></div>
                     <div
                         class="chat-text-msg-input-placeholder"
                         id="msg-input-placeholder"
@@ -186,7 +186,7 @@
                 </div>
                 <!-- Emoji Icon Element -->
                 <div class="msg-input-right-icons">
-                        <button type="button" class="chat-msg-icon-label"
+                        <button type="button" class="chat-msg-icon-label" id="emoji-menu-button" 
                         ><i class="fa-solid fa-face-smile"></i>
                         </button>
                     <label for="chat-msg-emoji" class="chat-msg-icon-label"
@@ -203,5 +203,7 @@
                 </aside> 
             </form>
         </div>
+        <script src="https://cdn.jsdelivr.net/npm/emoji-mart@latest/dist/browser.js"></script>
+        <script defer type="module" src="./assets/js/main.js"></script>
     </body>
 </html>
