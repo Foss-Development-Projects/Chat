@@ -41,7 +41,7 @@
     font-size: 0.9em;
     z-index: 1;
     background-color: transparent;
-    font-family: "Helvetica Neue", sans-serif;
+    font-family:"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
     outline: none;
     display: inline-block;
     position: relative;
@@ -130,14 +130,6 @@
 }
 em-emoji-picker {
     height: 300px!important;
-    font-family: "Twemoji Mozilla",
-               "Apple Color Emoji",
-               "Segoe UI Emoji",
-               "Segoe UI Symbol",
-               "Noto Color Emoji",
-               "EmojiOne Color",
-               "Android Emoji",
-               sans-serif;
 }
 .show-emoji-menu {
     transform: scale(1.0)!important;

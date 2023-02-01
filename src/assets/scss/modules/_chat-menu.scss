@@ -4,7 +4,6 @@
 		display: grid;
 		grid-template-columns: 1fr;
 		grid-gap: 5px;
-		grid-template-rows: repeat(auto-fill, 1fr);
 		flex-direction: column;
 		position: absolute;
 		right: 10px;
@@ -20,6 +19,9 @@
 			background:none;
 			background-color: rgba(0, 0, 0, 0.2);
 			outline: none;
+			display: grid;
+			align-items: center;
+			grid-template-columns: 35px 1fr;
 			border: 1px solid white;
 			padding: 5px 10px;
 			border-radius: 5px;
@@ -27,6 +29,18 @@
 			color: whitesmoke;
 			cursor: pointer;
 			font-family: "Open Sans", sans-serif;
+			a {
+				text-align: left;
+				user-select: none;
+				text-decoration: none;
+				color: white;
+				&:hover {
+					color: cyan;
+				}
+			}
+			i {
+				text-align: left;
+			}
 		}
 	}
 }
