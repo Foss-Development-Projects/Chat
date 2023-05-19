@@ -33,7 +33,8 @@ body {
     height: 100%;
 }
 .chat-container {
-    width: 100%;
+    grid-area: chat-container;
+    max-width: 1000px;
     background-color: var(--chat-ui-bg-color);
     height: inherit;
     display: flex;
@@ -45,6 +46,13 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     align-items: center;
+    position: relative;
+}
+.app-navbar {
+    grid-area: app-navbar;
+}
+.chat-sidebar {
+    grid-area: chat-sidebar;
 }
 @media only screen and (max-width: 600px) {
     .chat-text-msg-input {
